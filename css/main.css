@@ -1,0 +1,87 @@
+p {
+  padding-bottom: 1rem;
+}
+
+p:last-of-type {
+  padding-bottom: 0;
+}
+
+.number {
+  font-family: 'Alkalami', serif;
+  font-size: 1.5em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.poster {
+  padding: 2rem;
+  height: 100vh;
+  background: #E8F819;
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    'header  header'
+    'sub-txt   .   '
+    'main-txt  side-txt'
+    'footer  footer'
+  ;
+  gap: 1rem;
+}
+
+.header {
+  grid-area: header;
+  text-align: right;
+}
+
+.header h1 {
+  font-size: 2.5vw;
+  display: inline-block;
+  border-bottom: 10px solid #000;
+}
+
+.sub-txt {
+  grid-area: sub-txt;
+}
+
+.jan {
+  font-size: 3vw;
+}
+
+.die {
+  font-size: 5vw
+}
+
+.main-txt {
+  grid-area: main-txt;
+}
+
+.side-txt {
+  grid-area: side-txt;
+  position: relative;
+}
+
+.box {
+  position: absolute;
+  left: -20px;
+  bottom: 0;
+  width: 20px;
+  height: 80px;
+  background: #000;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.footer-txt {
+  float: right;
+  width: 50%;
+  height: 200px;
+}
